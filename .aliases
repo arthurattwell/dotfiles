@@ -1,0 +1,80 @@
+# Shell commands
+alias l="ls"
+
+
+# Git shortcuts
+
+alias gpl="git pull"
+alias gps="git push"
+alias gpso="git push origin"
+alias gpst="git push --tags"
+alias gpstf="git push --tags -f"
+
+alias ga="git add"
+alias gaa="git add ."
+
+alias gb="git branch"
+alias gbd="git branch -d"
+alias gbv="git branch -v"
+
+alias gc="git commit"
+alias gcm="git commit -m"
+
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gcof="git checkout --"
+alias gcom="git checkout master"
+alias gcod="git checkout develop"
+alias gcol="git checkout live"
+
+alias gd="git diff"
+alias gda="git diff HEAD"
+
+alias gf="git fetch"
+
+alias gg="git gui"
+
+alias gi="git init"
+
+alias gl="git log"
+alias glg="git log --graph --oneline --decorate --all"
+alias gld="git log --pretty=format:'%h %ad %s' --date=short --all"
+alias glog="git log --pretty=format:%%h -n 1"
+alias ghc="git log --pretty=format:%%h -n 1^ | xclip"
+
+alias gmg="git merge --no-ff"
+
+alias gs="git status"
+alias gss="git status -s"
+
+alias gst="git stash"
+alias gsta="git stash apply"
+alias gstl="git stash list"
+alias gstp="git stash pop"
+alias gstd="git stash drop"
+
+
+# Jekyll
+
+alias js="bundle exec jekyll serve"
+alias jsi="bundle exec jekyll serve --incremental"
+alias jsb0="bundle exec jekyll serve --baseurl=''"
+alias jsb0i="bundle exec jekyll serve --baseurl='' --incremental"
+alias jsib0="bundle exec jekyll serve --baseurl='' --incremental"
+alias jb="bundle exec jekyll build"
+alias jbb0="bundle exec jekyll build --baseurl=''"
+alias jb-epub="bundle exec jekyll build --config='_config.yml,_configs/_config.epub.yml'"
+alias jb-app="bundle exec jekyll build --config='_config.yml,_configs/_config.app.yml'"
+alias jsi-app="bundle exec jekyll serve --incremental --config='_config.yml,_configs/_config.app.yml'"
+alias js-epub="bundle exec jekyll serve --config='_config.yml,_configs/_config.epub.yml'"
+alias jsi-epub="bundle exec jekyll serve --incremental --config='_config.yml,_configs/_config.epub.yml'"
+alias jsi-print="bundle exec jekyll serve --incremental --config='_config.yml,_configs/_config.print-pdf.yml'"
+alias js-live="bundle exec jekyll serve --config='_config.yml,_configs/_config.live.yml'"
+alias jb-live="bundle exec jekyll build --config='_config.yml,_configs/_config.live.yml'"
+alias jsi-live="bundle exec jekyll serve --incremental --config='_config.yml,_configs/_config.live.yml'"
+
+
+# Electric Book commands
+
+alias rl="./run-linux.sh"
+alias eb="npm run eb"
